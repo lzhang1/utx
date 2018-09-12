@@ -7104,10 +7104,10 @@
     "testResult": [
         {
             "className": "battle.test_tattle.TestBattle",
-            "methodName": "test_00001_fight",
+            "methodName": "test_00001_start_battle",
             "spendTime": "0.1S",
             "description": "测试战斗",
-            "log": "fight\n",
+            "log": "start battle\n",
             "status": "成功"
         },
         {
@@ -7120,15 +7120,7 @@
         },
         {
             "className": "battle.test_tattle.TestBattle",
-            "methodName": "test_00003_normal_attack",
-            "spendTime": "0.1S",
-            "description": "测试普通攻击",
-            "log": "normal attack\n",
-            "status": "成功"
-        },
-        {
-            "className": "battle.test_tattle.TestBattle",
-            "methodName": "test_00004_hello_world_00001_1000_100",
+            "methodName": "test_00003_get_battle_reward_00001_1000_100",
             "spendTime": "0.1S",
             "description": "领取战斗奖励",
             "log": "{'gold': 1000, 'diamond': 100}\n获得的钻石数量是：100\n",
@@ -7136,7 +7128,7 @@
         },
         {
             "className": "battle.test_tattle.TestBattle",
-            "methodName": "test_00005_hello_world_00002_2000_200",
+            "methodName": "test_00004_get_battle_reward_00002_2000_200",
             "spendTime": "0.1S",
             "description": "领取战斗奖励",
             "log": "{'gold': 2000, 'diamond': 200}\n获得的钻石数量是：200\n",
@@ -7144,76 +7136,68 @@
         },
         {
             "className": "chat.test_chat.TestChat",
-            "methodName": "test_00006_chat_in_world_channel",
+            "methodName": "test_00005_chat_in_world_channel",
             "spendTime": "0.1S",
             "description": "测试世界聊天",
             "log": "进行聊天\n",
             "status": "成功"
         },
         {
+            "className": "chat.test_chat.TestChat",
+            "methodName": "test_00006_chat_in_personal_channel",
+            "spendTime": "0.1S",
+            "description": "测试私聊",
+            "log": "私聊\n",
+            "status": "成功"
+        },
+        {
+            "className": "chat.test_chat.TestChat",
+            "methodName": "test_00007_chat_in_union_channel",
+            "spendTime": "0.1S",
+            "description": "测试公会聊天",
+            "log": "公会聊天\n",
+            "status": "成功"
+        },
+        {
             "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00007_create_legion",
+            "methodName": "test_00008_create_legion",
             "spendTime": "0.1S",
             "description": "创建军团",
-            "log": "",
+            "log": "setUp\ntearDown\n",
             "status": "成功"
         },
         {
             "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00008_bless_00001_gold_100",
-            "spendTime": "0.1S",
-            "description": "",
-            "log": "gold\n100\n",
+            "methodName": "test_00009_receive_bless_box_00001_10001",
+            "spendTime": "0.11S",
+            "description": "领取祈福宝箱",
+            "log": "setUp\n10001\ntearDown\n",
             "status": "成功"
         },
         {
             "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00009_bless_00002_diamond_500",
+            "methodName": "test_00010_receive_bless_box_00002_10002",
             "spendTime": "0.1S",
-            "description": "",
-            "log": "diamond\n500\n",
+            "description": "领取祈福宝箱",
+            "log": "setUp\n10002\ntearDown\n",
             "status": "成功"
         },
         {
             "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00010_receive_bless_box_00001_10001",
-            "spendTime": "0.0S",
-            "description": "领取祈福宝箱",
-            "log": "",
-            "status": "跳过"
-        },
-        {
-            "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00011_receive_bless_box_00002_10002",
-            "spendTime": "0.0S",
-            "description": "领取祈福宝箱",
-            "log": "",
-            "status": "跳过"
-        },
-        {
-            "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00012_receive_bless_box_00003_10003",
-            "spendTime": "0.0S",
-            "description": "领取祈福宝箱",
-            "log": "",
-            "status": "跳过"
-        },
-        {
-            "className": "legion.test_legion.TestLegion",
-            "methodName": "test_00013_quit_legion",
+            "methodName": "test_00011_receive_bless_box_00003_10003",
             "spendTime": "0.1S",
-            "description": "退出军团",
-            "log": "吧啦啦啦啦啦啦\nTraceback (most recent call last):\n  File \"C:\\github\\github\\utx\\utx\\utx.py\", line 89, in __handler\n    result = func(*args, **kwargs)\n  File \"C:\\github\\github\\utx\\demo\\testcase\\legion\\test_legion.py\", line 38, in test_quit_legion\n    assert 1 == 2\nAssertionError\n",
-            "status": "失败"
+            "description": "领取祈福宝箱",
+            "log": "setUp\n10003\ntearDown\n",
+            "status": "成功"
         }
     ],
     "testName": "接口自动化测试报告",
-    "beginTime": "2017-12-27 16:14:17",
-    "totalTime": "0:00:01.003930",
-    "testPass": 9,
-    "testAll": 13,
-    "testFail": 1,
-    "testSkip": 3
+    "beginTime": "2018-09-12 10:32:44",
+    "totalTime": "0:00:01.144017",
+    "testPass": 11,
+    "testAll": 11,
+    "testFail": 0,
+    "testSkip": 0
 };
 
     function details(obj) {
