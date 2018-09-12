@@ -10,5 +10,5 @@ if __name__ == '__main__':
     utx.stop_patch()
 
     runner = utx.TestRunner()
-    runner.add_case_dir(r"testcase\chat")
+    runner.add_case_dir(r"testcase/chat")
     runner.run_test(report_title='接口自动化测试报告')
