@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 # -*- coding: UTF-8 -*-
 """
 单独使用测试报告组件，不需要utx的其他扩展功能
