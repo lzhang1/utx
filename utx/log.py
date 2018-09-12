@@ -6,8 +6,6 @@ Created by jianbing on 2017-10-30
 import sys
 import logging.handlers
 from colorama import Fore, Style
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 _logger = logging.getLogger('utx_logger')
 _logger.setLevel(logging.DEBUG)

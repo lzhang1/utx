@@ -29,7 +29,7 @@ class TestRunner:
         else:
             self.case_dirs.append(dir_path)
 
-    def run_test(self, report_title='接口自动化测试报告'):
+    def run_test(self, report_title=r'接口自动化测试报告'):
 
         if not self.case_dirs:
             raise Exception("请先调用add_case_dir方法，添加测试用例文件夹")
