@@ -42,6 +42,7 @@ import sys
 import unittest
 from xml.sax import saxutils
 
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 __author__ = "Wai Yip Tung && Eason Han"
 __version__ = "0.8.4"
 
