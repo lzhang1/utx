@@ -3,6 +3,9 @@
 
 from utx import *
 import logging
+import sys
+import io
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 if __name__ == '__main__':
     # setting.run_case = {Tag.FULL}  # 运行全部测试用例
