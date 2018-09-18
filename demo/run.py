@@ -10,7 +10,12 @@ if __name__ == '__main__':
     options,args = parser.parse_args()
     if len(args) != 4:
         parser.error("wrong number of arguments")
-    setting.run_case = {locals()['Tag.'+args[0]]}
+    if args[0] == 'FULL':
+		setting.run_case = {Tag.FULL}
+    elif args[0] == 'SMOKE':
+        setting.run_case = {Tag.SMOKE}
+    else:
+        setting.run_case = {Tag.SP}
     setting.check_case_doc = False  # 关闭检测是否编写了测试用例描述
     setting.full_case_name = True
     setting.max_case_name_len = 80  # 测试报告内，显示用例名字的最大程度
@@ -18,8 +23,14 @@ if __name__ == '__main__':
     setting.sort_case = True  # 是否按照编写顺序，对用例进行排序
     setting.create_bstest_style_report = args[1]
     setting.create_ztest_style_report = args[2]
-    #log.set_level(args[3])
-    log.set_level(locals()['logging.'+args[3]])
+    if args[3] == 'DEBUG':
+        log.set_level(logging.DEBUG)
+    elif args[3] == 'INFO':
+        log.set_level(logging.INFO)
+    elif args[3] == 'ERROR':
+        log.set_level(logging.ERROR)
+    else:
+        log.set_level(logging.WARNING)
 
     runner = TestRunner()
     runner.add_case_dir(r"testcase")
