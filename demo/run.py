@@ -11,7 +11,7 @@ if __name__ == '__main__':
     if len(args) != 4:
         parser.error("wrong number of arguments")
     if args[0] == 'FULL':
-		setting.run_case = {Tag.FULL}
+        setting.run_case = {Tag.FULL}
     elif args[0] == 'SMOKE':
         setting.run_case = {Tag.SMOKE}
     else:
