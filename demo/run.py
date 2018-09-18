@@ -8,8 +8,7 @@ from optparse import OptionParser
 if __name__ == '__main__':
     parser = OptionParser(usage="usage: %prog [options]",version="%prog 1.0")
     options,args = parser.parse_args()
-    print(len(args)) 
-	if len(args) != 4:
+    if len(args) != 4:
         parser.error("wrong number of arguments")
     setting.run_case = {args[0]}
     setting.check_case_doc = False  # 关闭检测是否编写了测试用例描述
