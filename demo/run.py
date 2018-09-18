@@ -11,7 +11,7 @@ if __name__ == '__main__':
     if len(args) != 4:
         parser.error("wrong number of arguments")
     #setting.run_case = {args[0]}
-    setting.run_case = {Tag.args[0]}
+    setting.run_case = {Tag.eval(args[0])}
     setting.check_case_doc = False  # 关闭检测是否编写了测试用例描述
     setting.full_case_name = True
     setting.max_case_name_len = 80  # 测试报告内，显示用例名字的最大程度
