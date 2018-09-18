@@ -18,7 +18,7 @@ if __name__ == '__main__':
     setting.sort_case = True  # 是否按照编写顺序，对用例进行排序
     setting.create_bstest_style_report = args[1]
     setting.create_ztest_style_report = args[2]
-    log.set_level(logging.DEBUG) = args[3]
+    log.set_level(args[3])
 
     runner = TestRunner()
     runner.add_case_dir(r"testcase")
